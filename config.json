@@ -1,0 +1,6 @@
+{
+  "PORT": 7860,
+  "ID_BASE": "https://api.azhkthg1.net/id/",
+  "REFRESH_TOKEN": "",
+  "WS_BASE": "wss://websocket.azhkthg1.net/wsbinary"
+}

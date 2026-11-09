@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sunwin-taixiu
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm ci --omit=dev || npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /api/state
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REFRESH_TOKEN
+        sync: false

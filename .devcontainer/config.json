@@ -1,0 +1,48 @@
+{
+ "listen": "0.0.0.0:8080",
+ "server_keys": [
+  "sk-oc2a-e14b196a35216e1e11f0a8752162672aeaf1eca80d9ea8a8"
+ ],
+ "zen_keys": [],
+ "go_keys": [],
+ "anonymous": true,
+ "warp": {
+  "enabled": false
+ },
+ "proxies": [
+  "direct"
+ ],
+ "proxyfile": "",
+ "upstream": {
+  "zen": "https://opencode.ai/zen",
+  "go": "https://opencode.ai/zen/go",
+  "anonymous": "https://opencode.ai/inference",
+  "prompt_environment": {}
+ },
+ "retry": {
+  "max_attempts": 3,
+  "timeout_seconds": 300
+ },
+ "models": {
+  "refresh_seconds": 300,
+  "free_only": false,
+  "active_probes": false
+ },
+ "performance": {
+  "max_anonymous_exits": 8,
+  "free_tier_block_seconds": 900
+ },
+ "logging": {
+  "level": "info"
+ },
+ "webui": {
+  "enabled": false
+ },
+ "prefer": "go",
+ "rotation": {
+  "sota": {
+   "alias": "sota",
+   "order": []
+  }
+ }
+}

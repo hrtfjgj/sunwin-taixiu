@@ -1,0 +1,17 @@
+{
+ "name": "oc2a-gw",
+ "image": "mcr.microsoft.com/devcontainers/universal:2",
+ "features": {
+  "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+ },
+ "forwardPorts": [
+  8080
+ ],
+ "postStartCommand": "bash .devcontainer/start-oc2a.sh",
+ "portsAttributes": {
+  "8080": {
+   "visibility": "public",
+   "label": "opencode2api"
+  }
+ }
+}
